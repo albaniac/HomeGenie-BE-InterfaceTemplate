@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="HomeGenie_BE_InterfaceWizard.88e97c41-d480-4b3d-9a9e-d847073030b1" Version="1.0" Language="en-US" Publisher="Company" />
+        <DisplayName>HomeGenie_BE_InterfaceWizard</DisplayName>
+        <Description>Empty VSIX Project.</Description>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="HomeGenie-BE-InterfaceTemplate" d:TargetPath="|HomeGenie-BE-InterfaceTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" AssemblyName="|%CurrentProject%;AssemblyName|" />
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="MIG.dll" AssemblyName="MIG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="Newtonsoft.Json.dll" AssemblyName="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" />
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="NLog.dll" AssemblyName="NLog, Version=4.1.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c" />
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="Ude.dll" AssemblyName="Ude, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null" />
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="websocket-sharp.dll" AssemblyName="websocket-sharp, Version=1.0.2.36589, Culture=neutral, PublicKeyToken=5660b08a1845a91e" />
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="CommonMark.dll" AssemblyName="CommonMark, Version=0.1.0.0, Culture=neutral, PublicKeyToken=001ef8810438905d" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>

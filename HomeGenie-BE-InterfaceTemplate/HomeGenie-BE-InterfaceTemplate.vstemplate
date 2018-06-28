@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>HomeGenie-BE-InterfaceTemplate</Name>
+    <Description>HomeGenie-BE-InterfaceTemplate</Description>
+    <Icon>HomeGenie-BE-InterfaceTemplate.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>2c87e6a4-33f5-4bbe-875e-ec8a57563a51</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>HomeGenie-BE-InterfaceTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">configlet.html</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">configuration.xml</ProjectItem>
+      <ProjectItem ReplaceParameters="false">logo.png</ProjectItem>
+      <ProjectItem ReplaceParameters="true">package.ps1</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">README.md</ProjectItem>     
+      <!--<ProjectItem ReplaceParameters="true" OpenInEditor="true">InterfaceSkelton.cs</ProjectItem>-->
+      <ProjectItem TargetFileName="$domain$.$safeprojectname$.cs" ReplaceParameters="true">InterfaceSkelton.cs</ProjectItem>
+      <Folder Name="Enums">
+          <ProjectItem>Commands.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+    <WizardExtension>
+        <Assembly>HomeGenie-BE-InterfaceWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=eeb7dda70a4c5e87</Assembly>
+        <FullClassName>HomeGenie_BE_InterfaceWizard.WizardImplementation</FullClassName>
+    </WizardExtension>
+</VSTemplate>
